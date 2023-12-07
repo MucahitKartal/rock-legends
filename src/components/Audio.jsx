@@ -5,12 +5,12 @@ const Audio = ({ audio }) => {
   const [play, { stop }] = useSound(audio);
 
   const handlePlay = (e) => {
-    e.stopPropagation(); // Stop the event from propagating to the parent div
+    e.stopPropagation();
     play();
   };
 
   const handleStop = (e) => {
-    e.stopPropagation(); // Stop the event from propagating to the parent div
+    e.stopPropagation();
     stop();
   };
   return (
