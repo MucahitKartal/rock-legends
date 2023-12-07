@@ -30,25 +30,29 @@ const CardContainer = () => {
 
       {value ? (
         <div>
-          {data.filter(filteredFunc).map(({ name, img, songs, audio }) => (
-            <PlayerCard
-              key={name}
-              name={name}
-              img={img}
-              songs={songs}
-              audio={audio}
-            />
-          ))}
+          {data
+            .filter(filteredFunc)
+            .map(({ name, img, songs, audio, wiki }) => (
+              <PlayerCard
+                key={name}
+                name={name}
+                img={img}
+                songs={songs}
+                audio={audio}
+                wiki={wiki}
+              />
+            ))}
         </div>
       ) : (
         <div>
-          {data.map(({ name, img, songs, audio }) => (
+          {data.map(({ name, img, songs, audio, wiki }) => (
             <PlayerCard
               key={name}
               name={name}
               img={img}
               songs={songs}
               audio={audio}
+              wiki={wiki}
             />
           ))}
         </div>
