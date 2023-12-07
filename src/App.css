@@ -27,7 +27,7 @@ input {
   border-radius: 15px;
   padding: 1rem;
   margin: 1rem;
-  color: bisque;
+  color: rgb(24, 13, 1);
   font-size: 1.4rem;
 }
 
@@ -87,9 +87,8 @@ input::placeholder {
   font-size: 1.4rem;
 }
 
-/* CSS */
 .btn-audio {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.539);
   border: 1px solid #222222;
   border-radius: 8px;
   box-sizing: border-box;
@@ -101,9 +100,9 @@ input::placeholder {
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
-  margin: 0;
+  margin: 0.2rem;
   outline: none;
-  padding: 13px 23px;
+  padding: 8px 14px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -115,18 +114,18 @@ input::placeholder {
   width: auto;
 }
 
-.button-23:focus-visible {
+.btn-audio:focus-visible {
   box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
   transition: box-shadow 0.2s;
 }
 
-.button-23:active {
+.btn-audio:active {
   background-color: #f7f7f7;
   border-color: #000000;
   transform: scale(0.96);
 }
 
-.button-23:disabled {
+.btn-audio:disabled {
   border-color: #dddddd;
   color: #dddddd;
   cursor: not-allowed;
