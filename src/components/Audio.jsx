@@ -15,12 +15,12 @@ const Audio = ({ audio }) => {
   };
   return (
     <div>
-      <button onClick={handlePlay}>
+      <button className="btn-audio" onClick={handlePlay}>
         <span role="img" aria-label="nota">
           🎵 Play
         </span>
       </button>
-      <button onClick={handleStop}>
+      <button className="btn-audio" onClick={handleStop}>
         <span role="img" aria-label="stop">
           🛑 Stop
         </span>
